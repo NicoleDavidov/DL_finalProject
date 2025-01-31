@@ -21,18 +21,28 @@ The project implements a CNN-based deep learning model. Additionally, transfer l
 
 ## Evaluation
 
-- The best model achieved **100% accuracy** on the test set.
+- The CNN model achieved **99% accuracy** on the test set.
+- The Transfer Learning model achieved **100% accuracy** on the test set.
 - Precision, recall, and F1-score confirmed excellent classification results.
 - A confusion matrix was generated to visualize model predictions.
 
 ## Results
 
-| Class       | Precision | Recall   | F1-score | Support |
-| ----------- | --------- | -------- | -------- | ------- |
-| Benign      | 1.00      | 1.00     | 1.00     | 12      |
-| Malignant   | 1.00      | 1.00     | 1.00     | 56      |
-| Normal      | 1.00      | 1.00     | 1.00     | 42      |
-| **Overall** | **1.00**  | **1.00** | **1.00** | **110** |
+### CNN Model Performance
+| Class            | Precision | Recall   | F1-score | Support |
+|-----------------|-----------|----------|----------|---------|
+| Benign cases    | 1.00      | 0.87     | 0.93     | 23      |
+| Malignant cases | 1.00      | 1.00     | 1.00     | 123     |
+| Normal cases    | 0.96      | 1.00     | 0.98     | 74      |
+| **Overall**     | **0.99**  | **0.99** | **0.99** | **220** |
+
+### Transfer Learning Model Performance
+| Class            | Precision | Recall   | F1-score | Support |
+|-----------------|-----------|----------|----------|---------|
+| Benign cases    | 1.00      | 1.00     | 1.00     | 23      |
+| Malignant cases | 1.00      | 1.00     | 1.00     | 123     |
+| Normal cases    | 1.00      | 1.00     | 1.00     | 74      |
+| **Overall**     | **1.00**  | **1.00** | **1.00** | **220** |
 
 ## Future Improvements
 
